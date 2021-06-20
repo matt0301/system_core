@@ -74,7 +74,7 @@ static void dump_header_info(log_t* log) {
   auto revision = GetProperty("ro.revision", "unknown");
   auto lineage_version = GetProperty("ro.custom.version", "unknown");
 
-  _LOG(log, logtype::HEADER, "LineageOS Version: '%s'\n", lineage_version.c_str());
+  _LOG(log, logtype::HEADER, "Kraken Version: '%s'\n", lineage_version.c_str());
   _LOG(log, logtype::HEADER, "Build fingerprint: '%s'\n", fingerprint.c_str());
   _LOG(log, logtype::HEADER, "Revision: '%s'\n", revision.c_str());
   _LOG(log, logtype::HEADER, "ABI: '%s'\n", ABI_STRING);
